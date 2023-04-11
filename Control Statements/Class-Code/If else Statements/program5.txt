@@ -1,0 +1,19 @@
+//5.Take an integer as input and print wheather it is divisible by 4 or not
+//Input: 5
+//Output: Not Divisible
+
+class Div{
+
+        public static void main(String[]args){
+
+          int x = 5;
+          if(x%4 == 0){
+
+                  System.out.println(x+" Divisible");
+
+          }else{
+
+                  System.out.println("Not Divisible");
+          }
+        }
+}

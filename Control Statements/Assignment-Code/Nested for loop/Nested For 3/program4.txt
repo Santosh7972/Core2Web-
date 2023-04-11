@@ -1,0 +1,17 @@
+class Demo{
+
+        public static void main(String[] args){
+
+                int N1 = 4;
+                for(int i = 1;i <= N1;i++){
+                        int num = 3;
+                        char ch = 'C';
+                        for(int j =1;j <= N1 - i + 1;j++){
+
+                                System.out.print(num);
+                                System.out.print(ch+"  ");
+                        }
+                        System.out.println();
+                }
+        }
+}

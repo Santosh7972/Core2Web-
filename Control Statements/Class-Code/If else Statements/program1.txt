@@ -1,0 +1,14 @@
+//1.Given an integer age as input.
+//print "Eligible to vote" If the person is eligible to vote
+
+class Vote{
+
+        public static void main(String[]args){
+
+          int vote = 20;
+          if(vote > 18){
+
+                  System.out.println("Eligible to vote");
+          }
+        }
+}

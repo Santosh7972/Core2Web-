@@ -1,0 +1,27 @@
+//2.print integer from 8 to 1 using while loop
+
+class Loop{
+
+            public static void main(String[]args){
+
+                int i = 8;
+                while(i >= 1){
+
+                        System.out.println(i);
+                        i--;
+                }
+        }
+}
+
+//Dry run
+
+//i = 8        i >= 1       Sop(i)    i--
+//i = 8        8 >= 1       Sop(8)    i = 7
+//i = 7        7 >= 1       Sop(7)    i = 6
+//i = 6        6 >= 1       Sop(6)    i = 5
+//i = 5        5 >= 1       Sop(5)    i = 4
+//              .
+//              .
+//              .
+//i = 1        1 >= 1       Sop(1)    i = 0
+//i = 0        0 >= 1(<---The condition is false--->)

@@ -1,0 +1,51 @@
+//7.Write a programn to print the following pattern
+//           D  D  D  D
+//           D  D  D  D
+//           D  D  D  D
+//           D  D  D  D
+
+class Demo{
+
+        public static void main(String[] args){
+
+                int N1 = 4;
+                int N2 = 4;
+                for(int i = 1;i <= N1;i++){
+
+                        for(int j = 1;j <= N2;j++){
+
+                                System.out.print("D  ");
+                        }
+                        System.out.println();
+                }
+        }
+}
+
+//Dry run
+//
+//i           i <= N1        j      j <= N2      So print("D  ")          Sop()
+//1           1 <= 4         1      1 <= 4       D                        -
+//                           2      2 <= 4       D  D                     -
+//                           3      3 <= 4       D  D  D                  -
+//                           4      4 <= 4       D  D  D  D               -
+//                           5      5 <= 4  (<---Condition False--->)    Next line
+//
+//2           2 <= 4         1      1 <= 4       D                        -
+//                           2      2 <= 4       D  D                     -
+//                           3      3 <= 4       D  D  D                  -
+//                           4      4 <= 4       D  D  D  D               -
+//                           5      5 <= 4  (<---Condition False--->)    Next line
+//
+//3           3 <= 4         1      1 <= 4       D                        -
+//                           2      2 <= 4       D  D                     -
+//                           3      3 <= 4       D  D  D                  -
+//                           4      4 <= 4       D  D  D  D               -
+//                           5      5 <= 4  (<---Condition False--->)    Next line
+//
+//4           4 <= 4         1      1 <= 4       D                        -
+//                           2      2 <= 4       D  D                     -
+//                           3      3 <= 4       D  D  D                  -
+//                           4      4 <= 4       D  D  D  D               -
+//                           5      5 <= 4  (<---Condition False--->)    Next line
+//
+//5           5 <= 4 (<---Condition False--->)

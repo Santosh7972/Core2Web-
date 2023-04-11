@@ -1,0 +1,52 @@
+//3.Write a programn to print the following pattern
+//          4  5  6  7
+//          4  5  6  7
+//          4  5  6  7
+//          4  5  6  7
+
+class Demo{
+
+        public static void main(String[] args){
+
+                int N1 = 4;
+                int N2 = 4;
+                int sum = 13;
+                for(int i = 1;i <= N1;i++){
+
+                        for(int j = 1;j <= N2;j++){
+
+                                System.out.print(sum + i+"  ");
+                        }
+                        System.out.println();
+                }
+        }
+}
+
+//Dry run
+//
+//i           i <= N1        j      j <= N2      So print(sum + i)         Sop()
+//1           1 <= 4         1      1 <= 4       13 + 1 = 4                 -
+//                           2      2 <= 4       13 + 1 = 5                 -
+//                           3      3 <= 4       13 + 1 = 6                 -
+//                           4      4 <= 4       13 + 1 = 7                 -
+//                           5      5 <= 4  (<---Condition False--->)    Next line
+//
+//2           2 <= 4         1      1 <= 4       13 + 2 = 4                 -
+//                           2      2 <= 4       13 + 2 = 5                 -
+//                           3      3 <= 4       13 + 2 = 6                 -
+//                           4      4 <= 4       13 + 2 = 7                 -
+//                           5      5 <= 4  (<---Condition False--->)    Next line
+//
+//3           3 <= 4         1      1 <= 4       13 + 3 = 4                 -
+//                           2      2 <= 4       13 + 3 = 5                 -
+//                           3      3 <= 4       13 + 3 = 6                 -
+//                           4      4 <= 4       13 + 3 = 7                 -
+//                           5      5 <= 4  (<---Condition False--->)    Next line
+//
+//4           4 <= 4         1      1 <= 4       13 + 4 = 4                 -
+//                           2      2 <= 4       13 + 4 = 5                 -
+//                           3      3 <= 4       13 + 4 = 6                 -
+//                           4      4 <= 4       13 + 4 = 7                 -
+//                           5      5 <= 4  (<---Condition False--->)    Next line
+//
+//5           5 <= 4 (<---Condition False--->)

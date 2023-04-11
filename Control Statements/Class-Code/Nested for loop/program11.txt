@@ -1,0 +1,28 @@
+//O/P :            *  _  _  *
+//                 *  _  _  *
+//                 *  _  _  *
+//                 *  _  _  *
+
+class Demo{
+
+        public static void main(String[] args){
+
+                int N1 = 4;
+                int N2 = 4;
+                for(int i = 1;i <= N1;i++){
+
+                        for(int j =1;j <= N2;j++){
+
+                                //if(j == 1 || j == N2){
+                                if(j%N2 == 1 || j%N2 == 0){
+
+                                        System.out.print("*  ");
+                                }else{
+
+                                        System.out.print("_  ");
+                                }
+                        }
+                        System.out.println();
+                }
+        }
+}

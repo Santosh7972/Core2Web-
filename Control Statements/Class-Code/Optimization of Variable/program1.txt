@@ -1,0 +1,33 @@
+//1.Take integer N as input.
+//print a N is prime number or not
+
+
+class Demo {
+
+        public static void main(String[] args){
+
+                    int N = 15;
+                    int count = 0;
+                    for(int i = 1;i <= N;i++){
+                                             if(N%i == 0){
+                                             count++;
+                                             }
+                                             if(count>2){
+                                             break;
+                                             }
+                    }
+                    if(count == 2){
+                    System.out.println(N+ " is a prime number");
+                    }else{
+                    System.out.println(N+ " is not a prime number");
+                    }
+        }
+}
+//Dry run
+//
+//i <= N            N%i == 0      count++      count>2                     |  count == 2
+//1 <= 15           15%1 == 0        1         1>2                         |  3     == 2 (<---condition false--->)
+//2 <= 15           15%2 == 0        -         -                           |
+//3 <= 15           15%3 == 0        2         2>2                         |
+//4 <= 15           15%4 == 0        -         -                           |  15 is not a prime number......!
+//5 <= 15           15%5 == 0        3         3>2(<---count break--->)    |

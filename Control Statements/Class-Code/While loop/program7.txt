@@ -1,0 +1,28 @@
+//7.Given an integer N.
+//print sum of its digit
+//Assume: N >= 0
+//Input: 135
+//Output: 15
+
+
+class Demo{
+
+        public static void main(String[]args){
+
+                int N = 135;
+                int sum = 1;
+                while(N != 0){
+
+                        int rem = N%10;
+                        sum = sum * rem;
+                        N = N/10;
+                }
+                System.out.println(sum);
+        }
+}
+
+//dry run
+//
+//Sop(N%10) => 5     1 x 5 = 5      N/10 = 13
+//Sop(N%10) => 3     5 x 3 = 15     N/10 = 1
+//Sop(N%10) => 3     15 x 1 = 15    N/10 = 0

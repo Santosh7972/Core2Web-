@@ -1,0 +1,25 @@
+//8.Electricity Bill problem
+//given an integer input A which represents units of electricity consumed at your house.
+//calculate and print the bill amount.
+//units <= 100 : price per unit is 1.
+//units > 100  : price per unit is 2.
+//Input: 50
+//Output: 50
+//Input: 200
+//Output: 300
+
+class Units{
+
+        public static void main(String[]args){
+
+          int units = 200;
+          if(units <= 100){
+
+                  System.out.println(50*1);
+
+          }else{
+
+                  System.out.println((100*1)+(units-100)*2);
+          }
+        }
+}

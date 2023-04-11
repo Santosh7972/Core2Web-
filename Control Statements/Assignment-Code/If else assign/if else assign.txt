@@ -1,0 +1,193 @@
+Program 1: Write a java program to check if a number is even or odd.
+
+Input: var=10;
+
+Output: 10 is an even no
+
+Input: var=37;
+
+Output: 37 is an odd no
+
+Input: var = 0
+
+Output: ???
+
+Program 2: Write a java program, take a number, and print whether it is less than 10 or greater than 10.
+
+Input1: var=5
+
+Output: 5 Is Less than 10.
+
+Input2: var=16
+
+Output: 16 Is greater than 10.
+
+Input3: var=10
+
+Output: ??
+
+Program 3: Write a java program, take a number, and print whether it is positive or
+
+negative.
+
+Input: num = 5
+
+Output: 5 is a positive number
+
+Input: num = -9
+
+Output:-9 is a negative number
+
+Input: num= 0
+
+Output: ???????
+
+Program 4: Write a java program that checks a number from 0 to 5 and prints its spelling, if the number is greater than 5 print the number is greater than 5
+
+Input1 : var= 4
+
+Output: four
+
+Input2: var = 6
+
+Output: number is greater than 5
+
+Input3: var=-6
+
+Output: ???
+
+Program 5: Write a java program, in which according to month no print the no. of days in that month
+
+Input2: var 6
+
+Input3 var=-6 Output: ???
+
+Input: month = 7
+
+Output: July has 31 days
+
+Input: month = 13 Output: Invalid month
+
+Program 6: write a program to find a maximum between three numbers
+
+Input: month = -6 
+Output: ???
+
+Program 6: write a program to find a maximum between three numbers
+
+inputs 1:
+
+num1 = 1
+
+num2=2
+
+num3=3
+
+Output: 3 is the maximum between 1, 2 and 3
+
+inputs2:
+
+num1 = 1
+
+num2 = 4
+
+num3 = 3
+
+Output: 4 is the maximum between 1, 4 and 3
+
+inputs3:
+
+num1 = 42
+
+num2 = 32
+
+num3 = 42
+
+Output: ?????
+
+Program 7: Calculate profit or loss.
+
+Write a program that takes the cost price and selling price (take it hardcoded) and calculates its profit or loss
+
+input1:
+
+sellingPrice = 1200 
+
+costPrice = 1000 
+
+Output: profit of 200
+
+input2:
+
+selling Price = 300 
+
+costPrice = 500
+
+Output: loss of 200
+
+input3:
+
+sellingPrice 900 
+
+costPrice 900
+
+Output: ???
+
+Program 8: Write a program to check day number(1-7) and print the corresponding
+
+day of week
+
+Input1:1 
+
+Output: Monday
+
+Input2: 6
+
+Output: Saturday
+
+Input3: 8
+
+Output: ????????
+
+Program 9: Write a program in java to accept three numbers and check whether they
+
+are Pythagorean triplets or not
+
+example (what is a Pythagorean triplet):
+
+a=3,b=4,c=5
+
+if
+
+a*a+b*b=c*c
+
+then
+
+its pythagorean triplet
+
+else 
+
+not a Pythagorean triplet
+
+input1:
+
+a = 3, b = 4, c = 5
+
+Output: it is a Pythagorean triplet
+
+input2:
+
+a = 1, b = 6, c = 9
+
+Output: It is not a Pythagorean triplet
+
+input3:
+
+a = 2, b = 2, c = 2
+
+Output: ?????
+
+Program 10: Write a unique real-time example of If Elself Else Ladder
+
+
+

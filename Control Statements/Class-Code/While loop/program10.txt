@@ -1,0 +1,28 @@
+//10.Write a program to calculate the factorial of the given number.
+//Input: 6
+//Output: factorial 6 is 720
+
+class Demo{
+
+        public static void main(String[]args){
+
+                int N = 6;
+                int i = 1;
+                int mult = 1;
+                while(i <= N){
+                        mult = mult * i;
+                        i++;
+                }
+                System.out.println("factrial "+ N +" is: " + mult);
+        }
+}
+
+//dry run
+//
+//i <= N             i++              mult = mult * i
+//1 <= 6             1                1 * 1 = 1
+//2 <= 6             2                1 * 2 = 2
+//3 <= 6             3                2 * 3 = 6
+//4 <= 6             4                6 * 4 = 24
+//5 <= 6             5                24 * 5 = 120
+//6 <= 6             6                120 * 6 = 720                                                                                                                                                                                                                   

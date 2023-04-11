@@ -1,0 +1,21 @@
+//O/P :            A  B  C  D
+//                 A  B  C
+//                 A  B
+//                 A
+
+class Demo{
+
+        public static void main(String[] args){
+
+                int N1 = 4;
+                for(int i = 1;i <= N1;i++){
+                         char ch = 'A';
+                        //for(int j = N1;j >= i;j--){
+                        for(int j = 1;j <= N1 - i + 1;j++){
+                                System.out.print(ch+"  ");
+                                ch++;
+                        }
+                        System.out.println();
+                }
+        }
+}

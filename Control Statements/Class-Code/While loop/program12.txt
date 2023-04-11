@@ -1,0 +1,33 @@
+//12.Write a program to count the odd digit of the given number.
+//Input: 942111423
+//Output: Count of odd digit = 5.
+
+
+class Demo {
+
+        public static void main(String[] args){
+
+                int N = 942111423;
+                int count = 0;
+                while(N != 0){
+                        int rem = N%10;
+                        N = N/10;
+                        if(rem%2 != 0){
+                        count++;
+                }
+               }
+                System.out.println("Count of odd digit = " +count);
+        }
+}
+//Dry run
+//
+//rem = N%10             N = N/10         rem%2 != 0     count++
+//rem = 94211142.3           94211142     3%2 != 0       1
+//rem = 9421114.2            9421114      2%2 != 0       -
+//rem = 942111.4             942111       4%2 != 0       -
+//rem = 94211.1              94211        1%2 != 0       2
+//rem = 9421.1               9421         1%2 != 0       3
+//rem = 942.1                942          1%2 != 0       4
+//rem = 94.2                 94           2%2 != 0       -
+//rem = 9.4                  9            4%2 != 0       -
+//rem = 9                    0            9%2 != 0       5

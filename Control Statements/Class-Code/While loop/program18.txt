@@ -1,0 +1,29 @@
+//18.Write a program to check wheather the number is a palindrome number or not.
+//N = 2332
+
+
+class Demo {
+
+        public static void main(String[] args){
+
+                int N = 2332;
+                int y = 0;
+                int temp = N;
+                while(N != 0){
+                             int x = N%10;
+                                 y = y * 10 + x;
+                                 N = N/10;
+                             }
+                             if( y == temp){
+                              System.out.println(temp+ " is a palindrome number");
+                                           }else{
+                                                System.out.println(temp+ " is not a palindrome number");
+        }                                       }
+}
+//Dry run
+//
+//x = N%10           y = y * 10 + x                       N = N/10    |       y == temp
+//2                      0 * 10 + 2 = 2                       233     |       2332 == 2332 (<--2332 is a palindrome number-->)
+//3                      2 * 10 + 3 = 23                      23      |
+//3                      23 * 10 + 3 = 233                    2       |
+//2                      233 * 10 + 2 = 2332                  2       |

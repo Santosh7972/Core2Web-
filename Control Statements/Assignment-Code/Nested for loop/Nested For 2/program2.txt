@@ -1,0 +1,17 @@
+class Demo{
+
+        public static void main(String[] args){
+
+                int N1 = 4;
+                int N2 = 4;
+                int num = 4;
+                for(int i = 1;i <= N1;i++){
+                        for(int j = 1;j <= N2;j++){
+
+                                System.out.print(num+"  ");
+                        }
+                        num++;
+                        System.out.println();
+                }
+        }
+}

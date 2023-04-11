@@ -1,0 +1,29 @@
+//6.Given an integer N.
+//print sum of its digit
+//Assume: N >= 0
+//Input: 6531
+//Output: 15
+
+
+class Demo{
+
+        public static void main(String[]args){
+
+                int N = 6531;
+                int sum = 0;
+                while(N != 0){
+
+                        int rem = N%10;
+                        sum = sum + rem;
+                        N = N/10;
+                }
+                System.out.println(sum);
+        }
+}
+
+//dry run
+//
+//Sop(N%10) => 1     0 + 1 = 1      N/10 = 653
+//Sop(N%10) => 3     1 + 3 = 4      N/10 = 65
+//Sop(N%10) => 5     4 + 5 = 9      N/10 = 6
+//Sop(N%10) => 6     9 + 6 = 15     N/10 = 0

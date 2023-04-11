@@ -1,0 +1,22 @@
+//O/P :            A  B  C
+//                 D  E  F
+//                 G  H  I
+
+class Demo{
+
+        public static void main(String[] args){
+
+                int N1 = 3;
+                int N2 = 3;
+                char ch = 'A';
+                for(int i = 1;i <= N1;i++){
+
+                        for(int j =1;j <= N2;j++){
+
+                                System.out.print(ch+"  ");
+                                ch++;
+                        }
+                        System.out.println();
+                }
+        }
+}

@@ -1,0 +1,33 @@
+//7.Take integer N as input.
+//print whether N is Perfect or not.
+//Input1: 4
+//Output1: Not A Perfect number.
+//Input2: 6
+//Output2: Perfect number.
+
+
+class Demo {
+
+        public static void main(String[] args){
+
+                int N = 4;
+                int sum = 0;
+                for(int i = 1; i < N;i++){
+                                            if(N%i == 0){
+                                                            sum = sum + i;
+                                                        }
+                                          }
+                if(sum == N){
+                        System.out.println(N+ " is a Perfect number");
+                              }else{
+                                      System.out.println(N+ " is not a Perfect number");
+                              }
+        }
+}
+//Dry run
+//
+//i < N                 N%i == 0           sum = sum +1    |    sum == N
+//1 < 4                 4%1 == 0                  1        |
+//2 < 4                 4%2 == 0                  4        |     4  == 4   (<--Perfect number-->)
+//3 < 4                 4%3 == 0                  -        |
+//4 < 4  (<--Condition is false-->)

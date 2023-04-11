@@ -1,0 +1,27 @@
+class Demo{
+
+        public static void main(String[] args){
+
+                int N1 = 6;
+                int N2 = 6;
+                for(int i = 1;i <= N1;i++){
+                        char ch = 'F';
+                        int num = 5;
+                        for(int j = 1;j <= N2;j++){
+
+                                if(j%2 == 0){
+
+                                        System.out.print(num-- +"  ");
+                                        num--;
+                                }else{
+
+                                        System.out.print(ch-- +"  ");
+                                        ch--;
+                                }
+
+                        }
+
+                        System.out.println();
+                }
+        }
+}

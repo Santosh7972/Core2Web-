@@ -1,0 +1,20 @@
+//2.Take two integers A and B as input.
+//print the max of two
+//Assume: x and y are not equal
+//Input:
+//x = 5 y = 7
+//Output: y is greater
+
+class Max{
+
+        public static void main(String[]args){
+
+          int x = 5;
+          int y = 7;
+          if(x>5)
+
+                  System.out.println(x+" is gerater");
+          else
+                  System.out.println(y+" is greater");
+        }
+}

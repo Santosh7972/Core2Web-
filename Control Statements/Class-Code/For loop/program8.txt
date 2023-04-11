@@ -1,0 +1,32 @@
+//8.Take integer N as input.
+//print whether N is Armstrong or not.
+//Input1: 23
+//Output1: Not an Armstrong number.
+//Input2: 153
+//Output2: Armstrong number.
+
+
+class Demo {
+
+        public static void main(String[] args){
+
+                int N = 23;
+                int temp = N;
+                int sum = 0;
+                for( ;N!=0; ){
+                                 int rem = N%10;
+                                 sum = sum + (rem * rem * rem);
+                                 N = N/10;
+                             }
+                if(sum == temp){
+                        System.out.println(temp+ " is an Armstrong number");
+                               }else{
+                                       System.out.println(temp+ " is not an Armstrong number");
+                                    }
+        }
+}
+//Dry run
+//
+//N != 0             N % 10            Sum = sum + (rem * rem * rem)       N = N / 10     |    sum == temp
+//23 ! = 0              3                     0 + 27 = 27                       2         |
+//2 != 0                2                     27 + 8 = 35                       2         |     35 == 23  (<--23 is not an Armstrong number-->)

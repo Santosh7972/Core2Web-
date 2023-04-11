@@ -1,0 +1,42 @@
+//6.Write a programn to print the following pattern
+//            9  8  7
+//            9  8  7
+//            9  8  7
+
+class Demo{
+
+        public static void main(String[] args){
+
+                int N1 = 3;
+                int N2 = 3;
+                int sum = 10;
+                for(int i = 1;i <= N1;i++){
+
+                        for(int j = 1;j <= N2;j++){
+
+                                System.out.print(sum - j+ "  ");
+                        }
+                        System.out.println();
+                }
+        }
+}
+
+//Dry run
+//
+//i           i <= N1        j      j <= N2      So print(sum - j)          Sop()
+//1           1 <= 3         1      1 <= 3       10 - 1 = 9                 -
+//                           2      2 <= 3       10 - 2 = 8                 -
+//                           3      3 <= 3       10 - 3 = 7                 -
+//                           4      4 <= 3  (<---Condition False--->)    Next line
+//
+//2           2 <= 3         1      1 <= 3       10 - 1 = 9                 -
+//                           2      2 <= 3       10 - 2 = 8                 -
+//                           3      3 <= 3       10 - 3 = 7                 -
+//                           4      5 <= 3  (<---Condition False--->)    Next line
+//
+//3           3 <= 3         1      1 <= 3       10 - 1 = 9                 -
+//                           2      2 <= 3       10 - 2 = 8                 -
+//                           3      3 <= 3       10 - 3 = 7                 -
+//                           4      4 <= 3  (<---Condition False--->)    Next line
+//
+//4           4 <= 3 (<---Condition False--->)
