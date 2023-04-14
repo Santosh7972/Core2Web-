@@ -1,0 +1,26 @@
+import java.io.*;
+
+class BufferDemo{
+
+        public static void main(String[]args)throws IOException{
+
+                InputStreamReader isr = new InputStreamReader(System.in);
+
+                BufferReader br1 = new BufferedReader(new InputStreamReader(System.in));
+
+                String str1 = br1.readLine();
+                System.out.println("String1 : "+str1);
+
+                br1.close();
+
+                char ch = (char) isr.read();
+                System.out.println("String2 : "+ch);
+        }
+}
+//O/P :
+//p1.java:9: error: cannot find symbol
+//                BufferReader br1 = new BufferedReader(new InputStreamReader(System.in));
+//                ^
+//  symbol:   class BufferReader
+//  location: class BufferDemo
+//1 error

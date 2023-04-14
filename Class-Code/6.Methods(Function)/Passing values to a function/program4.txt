@@ -1,0 +1,22 @@
+class methodDemo{
+
+        void fun(float x){
+
+                System.out.println("In fun");
+                System.out.println(x);
+        }
+        public static void main(String[]args){
+
+                methodDemo obj = new methodDemo();
+                obj.fun(10);
+                obj.fun(10.5f);
+                obj.fun('A');
+                obj.fun(true);
+        }
+}
+//O/P:
+//p2.java:14: error: incompatible types: boolean cannot be converted to float
+//                obj.fun(true);
+//                        ^
+//Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+//1 error

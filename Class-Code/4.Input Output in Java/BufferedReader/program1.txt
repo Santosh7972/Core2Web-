@@ -1,0 +1,25 @@
+import java.io.*;
+
+class BufferDemo{
+
+        public static void main(String[]args)throws IOException{
+
+                InputStreamReader isr = new InputStreamReader(System.in);
+                BufferedReader br = new BufferedReader(isr);
+
+                System.out.print("Enter Name :");
+                String name = br.readLine();
+
+                System.out.print("Enter Age :");
+                int age = Integer.parseInt(br.readLine());
+
+                System.out.println("Name : "+name);
+                System.out.println("Age : "+age);
+
+        }
+}
+//O/P :
+//Enter Name :Pavan
+//Enter Age :22
+//Name :Pavan
+//Age :22

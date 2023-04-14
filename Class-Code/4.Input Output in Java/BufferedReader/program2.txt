@@ -1,0 +1,25 @@
+import java.io.*;
+
+class BufferDemo{
+
+        public static void main(String[]args)throws IOException{
+
+                InputStreamReader isr = new InputStreamReader(System.in);
+                BufferedReader br = new BufferedReader(isr);
+
+                System.out.print("Enter batsman name :");
+                String name1 = br.readLine();
+
+                System.out.print("Enter boller name :");
+                String name2 = br.readLine();
+
+                System.out.println("Batsman name : "+name1);
+                System.out.println("Boller name : "+name2);
+
+        }
+}
+//O/P :
+//Enter batsman name :Rohit Sharma
+//Enter boller name :Bumrah
+//Batsman name : Rohit Sharma
+//Boller name : Bumrah

@@ -1,0 +1,30 @@
+import java.io.;
+import java.util.;
+
+class BufferDemo{
+
+        public static void main(String[]args)throws IOException{
+
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+                System.out.println(Enter Society name, Wing, FlatNo);
+                String info = br.readLine();
+                System.out.println(info);
+
+                StringTokenizer obj = new StringTokenizer(info, );
+                String token1 = obj.nextToken();
+                String token2 = obj.nextToken();
+                String token3 = obj.nextToken();
+
+                System.out.println(Society  +token1);
+                System.out.println(wing  +token2);
+                System.out.println(Flat  +token3);
+        }
+}
+OP 
+Enter Society name, Wing, FlatNo
+Sapate C 3107
+Sapate C 3107
+Society  Sapate
+wing  C
+Flat  3107

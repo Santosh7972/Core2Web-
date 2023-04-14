@@ -1,0 +1,31 @@
+import java.io.*;
+
+class BufferDemo{
+
+        public static void main(String[]args)throws IOException{
+
+                InputStreamReader isr = new InputStreamReader(System.in);
+                BufferedReader br = new BufferedReader(isr);
+
+                System.out.print("Enter building name :");
+                String name1 = br.readLine();
+
+                System.out.print("Enter wing name :");
+                char name2 = (char) br.read();
+                br.skip(1);
+
+                System.out.print("Enter flat No :");
+                int flat = Integer.parseInt(br.readLine());
+
+                System.out.println("Building Name : "+name1);
+                System.out.println("Wing Name : "+name2);
+                System.out.println("Flat No : "+flat);
+        }
+}
+//O/P :
+//Enter building name :Sunrise
+//Enter wing name :B
+//Enter flat No :204
+//Building Name : Sunrise
+//Wing Name : B
+//Flat No : 204

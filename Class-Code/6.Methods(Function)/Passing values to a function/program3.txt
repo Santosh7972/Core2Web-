@@ -1,0 +1,20 @@
+class methodDemo{
+
+        void fun(int x){
+
+                System.out.println("In fun");
+                System.out.println(x);
+        }
+        public static void main(String[]args){
+
+                methodDemo obj = new methodDemo();
+                obj.fun(10);
+                obj.fun(10.5f);
+        }
+}
+//O/P:
+//p2.java:12: error: incompatible types: possible lossy conversion from float to int
+//                obj.fun(10.5f);
+//                        ^
+//Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+//1 error

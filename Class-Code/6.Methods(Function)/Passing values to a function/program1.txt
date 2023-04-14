@@ -1,0 +1,47 @@
+import java.util.*;
+
+class methodDemo{
+
+        void add(int a,int b){
+
+                int ans = a + b;
+                System.out.println("Add = "+ans);
+        }
+         void sub(int a,int b){
+
+                int ans = a - b;
+                System.out.println("Sub = "+ans);
+        }
+         void mult(int a,int b){
+
+                int ans = a * b;
+                System.out.println("Mult = "+ans);
+        }
+         void div(int a,int b){
+
+                int ans = a / b;
+                System.out.println("Div = "+ans);
+        }
+
+        public static void main(String[]args){
+
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter int values :");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                methodDemo obj = new methodDemo();
+                obj.add(a,b);
+                obj.sub(a,b);
+                obj.mult(a,b);
+                obj.div(a,b);
+        }
+}
+//O/P :
+//Enter int values :
+//5
+//5
+//Add = 10
+//Sub = 0
+//Mult = 25
+//Div = 1

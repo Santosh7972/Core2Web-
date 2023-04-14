@@ -1,0 +1,53 @@
+class switchDemo{
+
+        public static void main(String[]args){
+
+                int x = 3;
+                int a = 1;
+                int b = 2;
+                switch(x){
+
+                        case a:
+                                System.out.println("1");
+                                break;
+
+                        case b:
+                                System.out.println("2");
+                                break;
+
+                        case a+b:
+                                System.out.println("3");
+                                break;
+
+                        case a+a+b:
+                                System.out.println("4");
+                                break;
+
+                        case a+b+b:
+                                System.out.println("5");
+                                break;
+
+                        default :
+                                System.out.println("No Match");
+                                break;
+                }
+        }
+}
+/*O/P:
+ *
+ * yogi.java:10: error: constant expression required
+                        case a:
+                             ^
+yogi.java:14: error: constant expression required
+                        case b:
+                             ^
+yogi.java:18: error: constant expression required
+                        case a+b:
+                              ^
+yogi.java:22: error: constant expression required
+                        case a+a+b:
+                                ^
+yogi.java:26: error: constant expression required
+                        case a+b+b:
+                                ^
+5 errors*/

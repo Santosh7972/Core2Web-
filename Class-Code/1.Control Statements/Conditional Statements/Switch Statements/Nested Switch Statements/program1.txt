@@ -1,0 +1,29 @@
+class switchDemo{
+
+        public static void main(String[]args){
+
+                String str = "Oh Pune";
+                System.out.println("Oh Pune");
+                switch(str){
+
+                        case "Oh Pune": {
+
+                                                String str1 = "Veg";
+                                                switch(str1){
+
+                                                        case "Veg":
+                                                                System.out.println("Paneer..!");
+                                                                break;
+
+                                                        case "Non-Veg":
+                                                                System.out.println("Chicken..!");
+                                                                break;
+                                                }
+                        }
+                }
+        }
+}
+//O/P:
+//
+//   Oh Pune
+//   Paneer..!

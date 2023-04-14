@@ -1,0 +1,18 @@
+class methodDemo{
+
+        void fun(int x){
+
+                int y = x + 10;
+        }
+        public static void main(String[]args){
+
+                methodDemo obj = new methodDemo();
+                int a = obj.fun(10);
+                System.out.println(a);
+        }
+}
+//O/P:
+//p2.java:11: error: incompatible types: void cannot be converted to int
+//                int a = obj.fun(10);
+//                               ^
+//1 error

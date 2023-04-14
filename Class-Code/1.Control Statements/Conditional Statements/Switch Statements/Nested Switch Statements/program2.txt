@@ -1,0 +1,29 @@
+class switchDemo{
+
+        public static void main(String[]args){
+
+                String str = "Engineering Branch";
+                System.out.println("Engineering Branch...!");
+                switch(str){
+
+                        case "Engineering Branch": {
+
+                                                int Marks = 85;
+                                                switch(Marks){
+
+                                                        case 50:
+                                                                System.out.println("Mech Engg..!");
+                                                                break;
+
+                                                        case 85:
+                                                                System.out.println("Comp Engg..!");
+                                                                break;
+                                                }
+                        }
+                }
+        }
+}
+//O/P:
+//
+//   Engineering Branch...!
+//   Comp Engg..!

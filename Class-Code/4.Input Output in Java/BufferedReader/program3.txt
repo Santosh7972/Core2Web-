@@ -1,0 +1,30 @@
+import java.io.*;
+
+class BufferDemo{
+
+        public static void main(String[]args)throws IOException{
+
+                InputStreamReader isr = new InputStreamReader(System.in);
+                BufferedReader br = new BufferedReader(isr);
+
+                System.out.print("Enter player name :");
+                String name = br.readLine();
+
+                System.out.print("Enter jercy No :");
+                int jerNo = Integer.parseInt(br.readLine());
+
+                System.out.print("Enter Avg :");
+                float avg = Float.parseFloat(br.readLine());
+
+                System.out.println("Player name : "+name);
+                System.out.println("Jercy No : "+jerNo);
+                System.out.println("Avg No : "+avg);
+        }
+}
+//O/P :
+//Enter player name :M.S Dhoni
+//Enter jercy No :7
+//Enter Avg :200
+//Player name : M.S Dhoni
+//Jercy No : 7
+//Avg No : 200.0

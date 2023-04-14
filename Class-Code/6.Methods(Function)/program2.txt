@@ -1,0 +1,24 @@
+class methodDemo{
+
+        static void fun(){
+
+                System.out.println("In fun method");
+        }
+
+        void gun(){
+
+                System.out.println("In gun method");
+        }
+
+        public static void main(String[]args){
+
+                System.out.println("In main method");
+                fun();
+                methodDemo obj = new methodDemo();
+                obj.gun();
+        }
+}
+//O/P :
+//In main method
+//In fun method
+//In gun method
