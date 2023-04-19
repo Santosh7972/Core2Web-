@@ -15,7 +15,7 @@ class Demo{
 
                         arr[i] = Integer.parseInt(br.readLine());
 
-                        if(arr[i]%2 != 0){
+                        if(i%2 != 0){
 
                                 mult = mult * arr[i];
                         }
