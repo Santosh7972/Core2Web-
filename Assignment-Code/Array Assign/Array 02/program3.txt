@@ -1,0 +1,30 @@
+import java.io.*;
+class Demo{
+
+        public static void main(String[]args)throws IOException{
+
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+                System.out.println("Enter Size of array : ");
+                int size = Integer.parseInt(br.readLine());
+
+                int arr[] = new int[size];
+                int e_sum = 0;
+                int o_sum = 0;
+                System.out.println("Enter Elements : ");
+                for(int i = 0;i < arr.length;i++){
+
+                        arr[i] = Integer.parseInt(br.readLine());
+                        if(arr[i]%2 == 0){
+
+                                e_sum = e_sum + arr[i];
+                        }else{
+
+                                o_sum = o_sum + arr[i];
+                        }
+                }
+
+                System.out.println("The sum of even number : "+e_sum);
+                System.out.println("The sum of odd number : "+o_sum);
+        }
+}
